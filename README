@@ -1,0 +1,11 @@
+
+Pasos:
+
+- Descargar los archivos en un directorio.
+- Crear una carpeta con el nombre  ./BasesDeDatos
+- Mover las base de datos chinookdb, dellstore2, northwind a la carpeta  ./BasesDeDatos
+- correr comando docker compose up -d
+- Para entrar en el contenedor ejecutar
+	docker exec -it postgreSQL_db bash 
+- Ejecutar los comandos de los archivos 0_Leame_chinook.txt, 0_Leame_dellstore2.txt, 0_Leame_northwind.txt
+- Nota: Cliente recomendado DBeaver

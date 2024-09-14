@@ -1,0 +1,32 @@
+
+Base de datos
+-------------
+pagila
+
+Fuente:
+-------
+https://github.com/devrimgunduz/pagila
+
+Traduccion:
+-----------
+german.tejero@gmail.com
+
+Documentacion
+-------------
+.- Conceptual
+	1_pagila_conceptual.csr
+	
+.- Lógico
+	2_pagila_logico.csr
+
+Instalacion:
+------------
+.- Crear la bases de datos chinook
+	CREATE DATABASE pagila;
+
+.- Procesar el guión DDL de estructura
+  psql -f 3_pagila_fisico_estructura.sql pagila
+
+.- Procesar el guión DML de datros
+  psql -f 3_pagila_fisico_datos.sql pagila
+

@@ -1,0 +1,32 @@
+
+Base de datos
+-------------
+chinook
+
+Fuente:
+-------
+https://github.com/lerocha/chinook-database
+
+Traduccion:
+-----------
+german.tejero@gmail.com
+
+Documentacion
+-------------
+.- Conceptual
+	1_chinook_conceptual.csr
+	
+.- Lógico
+	2_chinook_logico.csr
+
+Instalacion:
+------------
+.- Crear la bases de datos chinook
+	CREATE DATABASE chinook;
+
+.- Procesar el guión DDL de estructura
+  psql -f 3_chinook_fisico_estructura.sql chinook
+
+.- Procesar el guión DML de datros
+  psql -f 3_chinook_fisico_datos.sql chinook
+
